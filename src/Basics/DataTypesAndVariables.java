@@ -78,10 +78,30 @@ public class DataTypesAndVariables {
         System.out.println("l: " + l);
 
         Scanner scanner = new Scanner(System.in);
-        System.out.print("----------------------\nEnter a number: ");
+        System.out.print("\n----------------------\nEnter a number: ");
         double a = scanner.nextDouble();
         int b = (int) a;
 
         System.out.println(b);
+
+        System.out.println("");
+
+        String language4 = new String("java");
+
+        String s1 = new String("java");
+        String s2 = new String("java");
+        String s3 = s2;
+
+        System.out.println("s2 == s3: " + (s1 == s2)); // false
+        System.out.println("s2 == s3: " +  (s2 == s3)); // true
+        System.out.println("s1.equals(s2): " + s1.equals(s2)); // true
+        System.out.println("s2.equals(s3): " + s2.equals(s3)); // true
+
+        System.out.println("");
+
+        String str = null;
+        System.out.println(str); // null
+        str = "hello";
+        System.out.println(str); // hello
     }
 }
